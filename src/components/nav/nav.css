@@ -1,0 +1,68 @@
+nav{
+    background: rgba(0,0 , 0,0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 2rem ;
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem ;
+    display: flex;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a{ 
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    background: rgba(0,0,0,0.3) ;
+}
+
+nav a.active{
+    background : var(--color-primary);
+    color: var(--color-bg);
+}
+
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.about_card{
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_card h5{
+    font-size: 1rem;
+}
+
+.about_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about_content p {
+    padding: 2rem 0 2.6rem;
+    color: var(--color-light);
+}

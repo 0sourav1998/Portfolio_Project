@@ -1,0 +1,99 @@
+.github_content{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15%;
+}
+
+.github_me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+    );
+    display: grid;
+    place-items: center;
+}
+
+ .github_me img{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+
+ }
+
+ .github_me img:hover{
+    transform: rotate(0);
+ }
+
+ .github_description{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .github_para{
+   color: var(--color-light);
+   margin: 2rem 0 2.6rem;
+ }
+
+ .github_card{
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+ }
+
+ .github_card:hover{
+    background: transparent;
+    background-color: var(--color-primary-variant);
+    cursor: pointer;
+ }
+
+ .github_icons{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+ }
+
+ .github_card h5{
+    font-size: 0.95rem;
+ }
+
+ .github_card small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+ }
+
+ @media screen and (max-width : 1024px) {
+    .github_content{
+        width: 80%;
+    }
+    .github_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (max-width : 600px) {
+    .github_content{
+        width: 100%;
+    }
+    .github_cards{
+       grid-template-columns: 1fr; 
+       gap: 1rem;
+    }
+    
+}
