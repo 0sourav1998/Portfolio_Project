@@ -38,6 +38,7 @@
  .about_para{
    color: var(--color-light);
    margin: 2rem 0 2.6rem;
+   text-align: start;
  }
 
  .about_card{
