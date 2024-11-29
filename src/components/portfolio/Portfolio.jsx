@@ -23,7 +23,7 @@ const Portfolio = () => {
             <a href="https://github.com/0sourav1998/Spotify-Clone" className="btn">
               Github
             </a>
-            <a href="#" className="btn btn_primary" target="_blank">
+            <a href="https://spotify-clone-final-t7x2.onrender.com/" className="btn btn_primary" target="_blank">
               Live Demo
             </a>
           </div>
