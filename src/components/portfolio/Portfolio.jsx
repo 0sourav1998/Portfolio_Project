@@ -5,6 +5,7 @@ import linkedin from "../../assets/linkedin-clone.png"
 import studyNotion from "../../assets/Study-Notion.png"
 import hireVelocity from "../../assets/Hire-Velocity.png"
 import netflix from "../../assets/netflix-gpt.png"
+import uber from "../../assets/uber.webp"
 import "./portfolio.css"
 
 const Portfolio = () => {
@@ -13,6 +14,21 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
+      <article className="portfolio_item">
+          <div className="portfolio_item_image">
+            <img src={uber} alt="" />
+          </div>
+          <h3 className="">Uber-Clone(Working)</h3>
+          <h5 className="">Used Stacks : MERN Stack</h5>
+          <div className="portfolio_item_cta">
+            <a href="https://github.com/0sourav1998/Quick-Cabs" className="btn">
+              Github
+            </a>
+            <a href="/github" className="btn btn_primary" target="_blank">
+              Live Demo
+            </a>
+          </div>
+        </article>
         <article className="portfolio_item">
           <div className="portfolio_item_image">
             <img src={spotify} alt="" />
@@ -69,20 +85,6 @@ const Portfolio = () => {
               Github
             </a>
             <a href="https://hire-velocity.vercel.app/" className="btn btn_primary" target="_blank">
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_item">
-          <div className="portfolio_item_image">
-            <img src={netflix} alt="" />
-          </div>
-          <h3 className="">Netflix-Clone</h3>
-          <div className="portfolio_item_cta">
-            <a href="/github" className="btn">
-              Github
-            </a>
-            <a href="/github" className="btn btn_primary" target="_blank">
               Live Demo
             </a>
           </div>
